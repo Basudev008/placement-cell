@@ -1,0 +1,11 @@
+<form action="/interview/update-result" method="POST">
+  <input type="hidden" name="interview" value="<%= interview.id %>" />
+  <input type="hidden" name="student" value="<%= result.student.id %>" />
+  <select name="resultStatus">
+    <option value="Pass">Pass</option>
+    <option value="Fail">Fail</option>
+    <option value="On Hold">On Hold</option>
+    <option value="Didn't Attempt">Didn't Attempt</option>
+  </select>
+  <input type="submit" value="Update Result" />
+</form>

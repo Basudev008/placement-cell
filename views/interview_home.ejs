@@ -1,0 +1,21 @@
+<div class="interview-details">
+  <p>Company Name : <%= interview.companyName %> <a href="/interview/<%= interview.id %>/allocate-student">Allocate Student</a>
+  </p>
+  <p>Interview Date : <%= interview.interviewDate.getDate() %> - <%=
+    interview.interviewDate.getMonth() %> - <%=
+    interview.interviewDate.getFullYear() %></p> </div>
+
+
+
+  <div>
+   
+      <% for (result of results){%>
+        <ul class="user-student-list">
+        <li><%= result.student.studentId %></li>
+        <li><a href="/student/profile/<%= result.student.id%>"><%= result.student.studentName %></a></li>
+        <li><%= result.resultStatus%></li>
+        <%- include('_updateResult') -%>  
+      </ul>
+      <%}%>
+  </div>
+</form>

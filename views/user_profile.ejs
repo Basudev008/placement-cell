@@ -1,0 +1,60 @@
+<div class="user-profile-top-row">
+  <h2><%= locals.user.name %>'s Profile</h2>
+  <div class="links">
+    <a href="/report/download">Download Report</a>
+    <a href="/student/add-student">Add Student</a>
+  </div>
+</div>
+
+<h2>Student List</h2>
+<ul class="user-student-list">
+  <li>Student Id</li>
+  <li>Student Name</li>
+  <li>Student College</li>
+</ul>
+<div class="student-list">
+  <% for (let student of students){%>
+  <ul class="user-student-list">
+    <li><%= student.studentId %></li>
+    <li>
+      <a href="/student/profile/<%= student.id%>"
+        ><%= student.studentName %>
+      </a>
+    </li>
+    <li><%= student.studentCollege %></li>
+    <a href="/student/delete/<%= student.id%>">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3096/3096687.png"
+        alt="delete-icon"
+      />
+    </a>
+  </ul>
+  <%}%>
+</div>
+
+<div class="user-profile-top-row">
+  <h2>Interview List</h2>
+  <div class="links">
+    <a href="/interview/add-interview">Add Interview</a>
+  </div>
+</div>
+<div>
+  <% for (let interview of interviews){%>
+  <ul class="user-student-list">
+    <li>
+      <a href="/interview/<%= interview.id%>"><%= interview.companyName %></a>
+    </li>
+    <li>
+      <%= interview.interviewDate.getDate() %> - <%=
+      interview.interviewDate.getMonth() %> - <%=
+      interview.interviewDate.getFullYear() %>
+    </li>
+    <a href="/interview/delete/<%= interview.id%>">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3096/3096687.png"
+        alt="delete-icon"
+      />
+    </a>
+  </ul>
+  <%}%>
+</div>

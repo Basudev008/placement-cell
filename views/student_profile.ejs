@@ -1,0 +1,29 @@
+<div class="interview-details">
+  <p>
+    Id: <%= student.studentId%> &emsp; &emsp; &emsp;Name: <%=
+    student.studentName%>&emsp; &emsp; &emsp; College: <%=
+    student.studentCollege%>
+  </p>
+  <p>
+    Placement Status: <% if(student.placed_status){%>
+    <span>Placed</span>
+    <%}else{%>
+    <span>Not Placed</span>
+    <%}%> &emsp; &emsp; DSA: <%= student.DSA_score%>&emsp; &emsp; WEBD: <%=
+    student.WebD_score%>&emsp; &emsp;React: <%= student.React_score%>
+  </p>
+</div>
+
+<h2>Interview List</h2>
+
+<% for(result of results){%>
+<ul class="user-student-list">
+  <li><%= result.interview.companyName %></li>
+  <li>
+    <%= result.interview.interviewDate.getDate() %> - <%=
+    result.interview.interviewDate.getMonth() %> - <%=
+    result.interview.interviewDate.getFullYear() %>
+  </li>
+  <li><%= result.resultStatus %></li>
+</ul>
+<%}%>

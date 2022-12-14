@@ -1,0 +1,87 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: rgb(61, 40, 142);
+  color: aliceblue;
+  display: flex;
+}
+
+header h3 {
+  width: 60%;
+  text-align: left;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+
+header ul {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+header li,
+header a {
+  list-style: none;
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+}
+
+.user-profile-top-row {
+  display: flex;
+}
+
+.user-profile-top-row h2 {
+  width: 55%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around !important;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 1.35rem;
+}
+
+.user-student-list {
+  display: flex;
+  list-style: none;
+  font-size: 1.5rem;
+  justify-content: space-around;
+}
+
+.user-student-list li {
+  width: 30%;
+  text-align: left;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.interview-details {
+  text-align: left !important;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.interview-details a {
+  margin-left: 20rem;
+}

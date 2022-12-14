@@ -1,0 +1,12 @@
+<form action="/interview/add-student" method="POST">
+  <h2>Add Student</h2>
+  <input type="hidden" name="interview" value="<%= interview.id %>" />
+  <p><input type="text" name="studentId" placeholder="Student ID" required /></p>
+  <p><select name="resultStatus">
+    <option value="Pass">Pass</option>
+    <option value="Fail">Fail</option>
+    <option value="On Hold">On Hold</option>
+    <option value="Didn't Attempt">Didn't Attempt</option>
+  </select></p>
+  <p></p><input type="submit" value="Add Student" /></p>
+</form>

@@ -1,0 +1,34 @@
+<h1>Add student</h1>
+
+<form action="/student/create-student" method="POST">
+  <p>
+    <input type="text" name="studentId" placeholder="Student ID" required />
+  </p>
+  <p>
+    <input type="text" name="studentName" placeholder="Student Name" required />
+  </p>
+  <p>
+    <input
+      type="text"
+      name="studentCollege"
+      placeholder="Student College"
+      required
+    />
+  </p>
+  <p>Placed_Status: <input type="checkbox" name="placed_status" required /></p>
+  <p>
+    <input type="number" name="DSA_score" placeholder="DSA score" required />
+  </p>
+  <p>
+    <input type="number" name="WebD_score" placeholder="WebD score" required />
+  </p>
+  <p>
+    <input
+      type="number"
+      name="React_score"
+      placeholder="React Score"
+      required
+    />
+  </p>
+  <p><input type="submit" value="Add student" /></p>
+</form>
