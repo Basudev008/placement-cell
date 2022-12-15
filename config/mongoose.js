@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/placement_cell_db");
+mongoose.connect(
+  process.env.MONGO_URI || "mongodb://localhost/placement_cell_db"
+);
 
 const db = mongoose.connection;
 
