@@ -1,15 +1,19 @@
-Coding Ninjas Placement Cell
-An interface for coding ninjas placement cell to keep records of students and schedule interviews with different companies
+Coding Ninjas Placement Cell App
+A NodeJS app for keeping track of students placement information and also their interviews with various companies
 
 Features
 Sign up / Sign in forms for employees
 Add a new student to the list of students
+Add a new Interview
 Allocate and schedule interview with different companies and update their result status
 Download reports of students in csv format
+
 Screenshots
 Sign Up Sign Up
 
 Sign In Sign In
+
+image.png
 
 Student Page Student Page
 
@@ -26,8 +30,10 @@ mongoDB: A NoSQL database which uses JSON-like documents
 
 Passport: Passport is authentication middleware for Node.js
 
+fast-csv: to download report of students in csv format
+
 Setup
-Run npm install to install required dependencies Create .env file in config directory Environment Variables:
+Run npm install to install required dependencies.
 
 PORT = [Your Port]
 SECRET = [Your Secret]

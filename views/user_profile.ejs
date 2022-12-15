@@ -46,7 +46,7 @@
     </li>
     <li>
       <%= interview.interviewDate.getDate() %> - <%=
-      interview.interviewDate.getMonth() %> - <%=
+      interview.interviewDate.getMonth() + 1 %> - <%=
       interview.interviewDate.getFullYear() %>
     </li>
     <a href="/interview/delete/<%= interview.id%>">

@@ -1,12 +1,14 @@
 const Result = require("../models/result");
 const Student = require("../models/student");
 
+//render add student page
 module.exports.addStudent = function (req, res) {
   return res.render("add_student", {
     title: "Add Student",
   });
 };
 
+// add new student into the database
 module.exports.create = function (req, res) {
   var status = false;
   console.log(req.body);
@@ -26,6 +28,7 @@ module.exports.create = function (req, res) {
   );
 };
 
+//render student profile page
 module.exports.profile = function (req, res) {
   Student.findById(req.params.id, function (err, student) {
     if (err) {
@@ -50,6 +53,7 @@ module.exports.profile = function (req, res) {
   });
 };
 
+// delete student from database
 module.exports.deleteStudent = function (req, res) {
   Student.findById(req.params.id, function (err, student) {
     student.remove();

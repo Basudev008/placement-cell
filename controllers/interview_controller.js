@@ -2,12 +2,14 @@ const Interview = require("../models/interview");
 const Result = require("../models/result");
 const Student = require("../models/student");
 
+// to render page for adding new interview
 module.exports.addInterview = function (req, res) {
   return res.render("add_interview", {
     title: "Add Interview",
   });
 };
 
+// creating a new interview
 module.exports.create = function (req, res) {
   Interview.create(req.body, function (err, interview) {
     if (err) {
@@ -19,6 +21,7 @@ module.exports.create = function (req, res) {
   });
 };
 
+// rendering the interview home page
 module.exports.home = function (req, res) {
   Interview.findById(req.params.id, function (err, interview) {
     if (err) {
@@ -45,6 +48,7 @@ module.exports.home = function (req, res) {
   });
 };
 
+// render the allocate student page
 module.exports.allocateStudent = function (req, res) {
   Interview.findById(req.params.id, function (err, interview) {
     if (err) {
@@ -58,6 +62,7 @@ module.exports.allocateStudent = function (req, res) {
   });
 };
 
+// add student to an interview
 module.exports.addStudent = function (req, res) {
   Interview.findById(req.body.interview, function (err, interview) {
     if (err) {

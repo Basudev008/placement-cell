@@ -2,7 +2,7 @@
   <p>Company Name : <%= interview.companyName %> <a href="/interview/<%= interview.id %>/allocate-student">Allocate Student</a>
   </p>
   <p>Interview Date : <%= interview.interviewDate.getDate() %> - <%=
-    interview.interviewDate.getMonth() %> - <%=
+    interview.interviewDate.getMonth() + 1 %> - <%=
     interview.interviewDate.getFullYear() %></p> </div>
 
 

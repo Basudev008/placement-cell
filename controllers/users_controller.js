@@ -2,6 +2,7 @@ const Interview = require("../models/interview");
 const Student = require("../models/student");
 const User = require("../models/user");
 
+//render user profile
 module.exports.profile = function (req, res) {
   var student = null;
   Student.find({}, function (err, students) {
@@ -74,6 +75,7 @@ module.exports.createSession = function (req, res) {
   return res.redirect("/user");
 };
 
+// sign out a user
 module.exports.destroySession = function (req, res) {
   req.logout(function (err) {
     if (err) {
