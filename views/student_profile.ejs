@@ -18,7 +18,11 @@
 
 <% for(result of results){%>
 <ul class="user-student-list">
-  <li><%= result.interview.companyName %></li>
+  <li>
+    <a href="/interview/<%= result.interview.id%>"
+      ><%= result.interview.companyName %></a
+    >
+  </li>
   <li>
     <%= result.interview.interviewDate.getDate() %> - <%=
     result.interview.interviewDate.getMonth() + 1 %> - <%=
