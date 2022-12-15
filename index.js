@@ -8,6 +8,7 @@ const session = require("express-session");
 const passport = require("passport");
 const passportLocal = require("./config/passport-local-strategy");
 const MongoStore = require("connect-mongo");
+const mongoose = require("mongoose");
 
 app.use(express.urlencoded());
 
@@ -55,7 +56,7 @@ app.use(passport.setAuthenticatedUser);
 // use express router
 app.use("/", require("./routes"));
 
-db.once("open", () => {
+mongoose.connection.once("open", () => {
   console.log("Connected to MongoDB");
 });
 
