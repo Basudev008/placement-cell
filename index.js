@@ -35,7 +35,8 @@ app.use(
     },
     store: MongoStore.create(
       {
-        mongoUrl: "mongodb://localhost/placement_cell_db",
+        mongoUrl:
+          process.env.MONGO_URI || "mongodb://localhost/placement_cell_db",
       },
       function (err) {
         console.log(err || "connect-mongodb setup ok");
