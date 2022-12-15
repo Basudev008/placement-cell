@@ -30,12 +30,6 @@ Interview Profile Page
 <img width="892" alt="image" src="https://user-images.githubusercontent.com/88258115/207862343-b1e18a56-004e-48e6-8942-5cae39e63beb.png">
 
 # Tech Stack
-•	NodeJS
-•	Express
-•	EJS
-•	MongoDB
-•	Passport
-•	Fast-CSV
 ![image](https://user-images.githubusercontent.com/88258115/207863020-691b29bc-1747-4e56-a261-1eabf2549e7a.png)
 
 
