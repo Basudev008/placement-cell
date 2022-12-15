@@ -1,38 +1,43 @@
-Coding Ninjas Placement Cell App
+#Coding Ninjas Placement Cell App
 A NodeJS app for keeping track of students placement information and also their interviews with various companies
 
-Features
+#Features
 Sign up / Sign in forms for employees
 Add a new student to the list of students
 Add a new Interview
 Allocate and schedule interview with different companies and update their result status
 Download reports of students in csv format
 
-Screenshots
-Sign Up Sign Up
+#Screenshots
+Sign Up Page
 
-Sign In Sign In
+<img width="904" alt="image" src="https://user-images.githubusercontent.com/88258115/207860744-e2ca8102-766c-4b05-bebf-c8510fe68b6b.png">
 
-image.png
+Sign In Page
 
-Student Page Student Page
+<img width="904" alt="image" src="https://user-images.githubusercontent.com/88258115/207860587-81986c48-723c-4a07-9ba2-4c6d11038b58.png">
 
-Interview Page Interview Page
+User Profile(Employee)
 
-Tech Stack
-Node.js: An asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.
+<img width="872" alt="image" src="https://user-images.githubusercontent.com/88258115/207861379-17f82863-8e67-48a8-a615-e5038167a7aa.png">
 
-Express: Express is a minimal and flexible Node.js web application framework
+Student Profile Page 
 
-EJS: View Engine used to display web pages
+<img width="922" alt="image" src="https://user-images.githubusercontent.com/88258115/207861577-6e5b20b2-9421-4c55-9f26-d91c0998300c.png">
 
-mongoDB: A NoSQL database which uses JSON-like documents
+Interview Profile Page
 
-Passport: Passport is authentication middleware for Node.js
+<img width="892" alt="image" src="https://user-images.githubusercontent.com/88258115/207862343-b1e18a56-004e-48e6-8942-5cae39e63beb.png">
 
-fast-csv: to download report of students in csv format
+#Tech Stack
+Node.js 
+Express
+EJS
+mongoDB
+Passport
+fast-csv
 
-Setup
+#Setup
 Run npm install to install required dependencies.
 
 PORT = [Your Port]
