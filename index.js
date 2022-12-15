@@ -37,6 +37,7 @@ app.use(
       {
         mongoUrl:
           process.env.MONGO_URI || "mongodb://localhost/placement_cell_db",
+        mongooseConnection: db,
       },
       function (err) {
         console.log(err || "connect-mongodb setup ok");
