@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  process.env.MONGO_URI || "mongodb://localhost/placement_cell_db"
+  process.env.MONGO_URI || "mongodb://127.0.0.1/placement_cell_db"
 );
 
 const db = mongoose.connection;

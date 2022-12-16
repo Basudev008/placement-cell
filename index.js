@@ -37,7 +37,7 @@ app.use(
     store: MongoStore.create(
       {
         mongoUrl:
-          process.env.MONGO_URI || "mongodb://localhost/placement_cell_db",
+          process.env.MONGO_URI || "mongodb://127.0.0.1/placement_cell_db",
         mongooseConnection: db,
       },
       function (err) {
