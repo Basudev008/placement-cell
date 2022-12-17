@@ -37,8 +37,7 @@ app.use(
     store: MongoStore.create(
       {
         mongoUrl:
-          process.env.MONGO_URI || "mongodb://127.0.0.1/placement_cell_db",
-        mongooseConnection: db,
+          "mongodb+srv://basudev008:8IbjLPPqS2uu53tF@cluster0.pau4rpn.mongodb.net/project1?retryWrites=true&w=majority",
       },
       function (err) {
         console.log(err || "connect-mongodb setup ok");
