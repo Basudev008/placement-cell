@@ -109,6 +109,7 @@ module.exports.updateResult = function (req, res) {
   );
 };
 
+// delete an interview , also deleting from results collection
 module.exports.deleteInterview = function (req, res) {
   Interview.findById(req.params.id, function (err, interview) {
     interview.remove();
